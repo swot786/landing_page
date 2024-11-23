@@ -22,6 +22,17 @@ body {
   color: linen;
 }
 
+.logo p {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.header-links,
+.hero-secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
 .links-div {
   display: flex;
   flex-direction: row;
@@ -45,10 +56,22 @@ body {
   color: linen;
 }
 
-.intro-text-img {
+.intro-text {
   width: 25rem;
-  height: 15rem;
-  border: 1px solid;
+  /* height: 15rem; */
+  /* border: 1px solid; */
+}
+
+.intro-text.intro-img {
+  text-align: center;
+  /* Padding is inserted for the purpose of centering text */
+  padding: 4rem 0;
+}
+
+.intro-text-div .hero-main-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
 }
 
 .intro-text-div p,
@@ -56,7 +79,8 @@ body {
   margin-top: 0.6rem;
 }
 
-.intro-text-div button, .sign-up button {
+.intro-text-div button,
+.sign-up button {
   background-color: #3882f6;
   width: 6rem;
   height: 1.8rem;
@@ -74,12 +98,13 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
-  height: 25rem;
+  /* border: 1px solid red; */
+  margin: 5rem 0;
+  /* height: 25rem; */
 }
 
 .random-info-heading {
-  margin: 1rem 0 1rem 0;
+  margin: 5rem 0 0 0;
   text-align: center;
 }
 
@@ -91,7 +116,7 @@ body {
   /* flex: 1; */
   width: 20rem;
   height: 20rem;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .info-child {
@@ -103,7 +128,7 @@ body {
 
 .info-child.child1 {
   flex: 3;
-  border: 1px solid;
+  border: unset;
 }
 
 .info-child.child1 p {
@@ -151,7 +176,6 @@ body {
 .action-section .sign-up {
   border: 1px solid linen;
   border-radius: 6px;
-
 }
 
 .call-to-action p:nth-of-type(1) {
@@ -162,4 +186,64 @@ body {
 }
 .call-to-action p {
   color: linen;
+}
+
+footer {
+  background-color: #1f2937;
+  height: 5rem;
+  padding: 2rem 0;
+}
+
+footer p {
+  text-align: center;
+  color: linen;
+}
+
+/* polish up hte media query! for the image div, 
+   and action-section.
+ */
+
+@media screen and (max-width: 768px) {
+  .introduction-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around;
+    align-items: center; */
+    /* height: 25rem; */
+    color: linen;
+  }
+
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    /* height: 15rem; */
+    /* border: 1px solid; */
+  }
+
+  .intro-text-div button {
+    display: block;
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+
+  .random-info {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    row-gap: 10px;
+  }
+
+  .quote-section {
+    background-color: #e5e7eb;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 4rem 0 4rem 0;
+    font-style: italic;
+    color: #1f2937;
+  }
+
+  .action-section {
+    font-size: medium;
+  }
 }
