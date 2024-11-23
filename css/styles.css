@@ -52,7 +52,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 25rem;
+  /* height: 25rem; */
   color: linen;
 }
 
@@ -64,8 +64,8 @@ body {
 
 .intro-text.intro-img {
   text-align: center;
+  /* border: 2px solid; */
   /* Padding is inserted for the purpose of centering text */
-  padding: 4rem 0;
 }
 
 .intro-text-div .hero-main-text {
@@ -170,7 +170,7 @@ body {
 
 .action-section .call-to-action {
   /* flex: 2; */
-  width: 70%;
+  width: 60%;
   /* border: 1px solid; */
 }
 .action-section .sign-up {
@@ -219,6 +219,14 @@ footer p {
     text-align: center;
     /* height: 15rem; */
     /* border: 1px solid; */
+  }
+
+  .intro-text.intro-img {
+    text-align: center;
+    /* border: 2px solid; */
+    height: 10rem;
+    /* Padding is inserted for the purpose of centering text */
+    padding: 5rem 0;
   }
 
   .intro-text-div button {
