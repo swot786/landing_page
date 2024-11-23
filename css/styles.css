@@ -251,7 +251,15 @@ footer p {
     color: #1f2937;
   }
 
-  .action-section {
-    font-size: medium;
+  .action-section .call-to-action {
+    /* flex: 2; */
+    width: 50%;
+    /* border: 1px solid; */
+  }
+
+  .action-section .sign-up {
+    /* flex: 2; */
+    margin-left: -10px;
+    /* border: 1px solid; */
   }
 }
